@@ -14,6 +14,7 @@ cur_states[50] = 1
 next_states = []
 
 ​pygame.init() 
+
  
 # Set the width and height of the screen [width, height]
 size = (WIN_SIZE, WIN_SIZE)
