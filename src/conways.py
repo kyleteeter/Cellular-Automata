@@ -2,16 +2,29 @@ import pygame, random
 
 # Define some colors and other constants
 BLACK = (0, 0, 0)
+BLUE = (0, 0, 255)
 WHITE = (255, 255, 255)
 GRAY = (25, 25, 25)
 WIN_SIZE = 500
+# NUM_SQUARES = ??
+# WIN_SIZE = NUM_SQUARES * 20 + (NUM_SQUARES + 1) * 5
 
 # 1. Create a set of initial states with simple pattern (Ex. blinker)
 cur_states = [0] * 400
 cur_states[10] = 1
 cur_states[30] = 1
 cur_states[50] = 1
-next_states = []
+
+generation = 0
+is_paused = False
+
+# 1 v.2 Fill cur_states with random states
+# cur_states = [0] * 400
+# for i in range( 0, len(cur_states)):
+#   cur_states[i] = random.randint(0,1)
+
+# 1 v.3 Allow users to choose between several predefined init states
+
 
 pygame.init()
 # Set the width and height of the screen [width, height]
